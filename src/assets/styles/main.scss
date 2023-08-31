@@ -1,0 +1,28 @@
+@import 'normalize.css';
+@import './fonts';
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px/1.5 'Gilroy', sans-serif;
+  color: var(--body-color);
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+button,
+select {
+  font-family: inherit;
+}
+
+.container {
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 100%;
+}
