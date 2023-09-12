@@ -6,3 +6,9 @@ export const flowersApi = {
       .then((data) => data.flowers);
   },
 };
+
+// export const flowersApi = {
+//   axios.get('https://flowers-mock-data.firebaseio.com/flowers.json')
+//     .then((response) => response.json())
+//     .catch((error) => console.log(error));
+// }

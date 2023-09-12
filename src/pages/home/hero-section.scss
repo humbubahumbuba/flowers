@@ -1,0 +1,16 @@
+.grid-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-hero-second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: solid 1px black;
+}
+
+.hero-grid-text {
+  border: 1px solid red;
+  display: block;
+  margin: auto;
+}

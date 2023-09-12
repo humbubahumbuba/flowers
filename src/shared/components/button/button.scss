@@ -1,4 +1,26 @@
 .button {
-  text-transform: uppercase;
-  background: var(--primary-color);
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: none;
+
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: palevioletred;
+  //   box-shadow: 5px 5px 9px 5px rgba(255, 31, 190, 0.34);
+  // }
+}
+
+.button-right {
+  border-right: 1px solid black;
+}
+
+.button-left {
+  border-left: 1px solid black;
 }

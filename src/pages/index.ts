@@ -1,1 +1,2 @@
-import './home/header-section.scss';
+import './home/header.scss';
+import './home/hero-section.scss';
