@@ -1,0 +1,38 @@
+.navbar {
+  $self: &;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary-color);
+  height: 80px;
+
+  &__block {
+    display: flex;
+    align-items: stretch;
+
+    &:first-child {
+      #{$self}__link {
+        border-right: 1px solid var(--primary-color);
+      }
+    }
+
+    &:last-child {
+      #{$self}__link {
+        border-left: 1px solid var(--primary-color);
+      }
+    }
+  }
+
+  &__link {
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    transition-property: background-color, color;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  }
+}

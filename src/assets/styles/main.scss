@@ -9,6 +9,7 @@
 body {
   font: 400 14px/1.5 'Gilroy', sans-serif;
   color: var(--body-color);
+  border: 1px solid var(--primary-color);
 }
 
 img {
@@ -21,12 +22,28 @@ select {
   font-family: inherit;
 }
 
-// .container {
-//   padding: 16px;
-//   margin: 0 auto;
-//   max-width: 100%;
-
-// }
 a {
   text-decoration: none;
+  color: var(--body-color);
+}
+
+.container {
+  padding: 80px;
+}
+
+.separator {
+  border-bottom: 1px solid var(--primary-color);
+  margin: 25px 0;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
 }
