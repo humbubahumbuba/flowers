@@ -1,45 +1,50 @@
 .about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--primary-color);
 
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-border-bottom: 1px solid var(--primary-color);
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+  }
 
-&__title {
-font-size: 50px;
-font-weight: 600;
-line-height: 120%; 
-margin: 0;
-}
-
-&__description {
+  &__description {
     border-left: 1px solid var(--primary-color);
-}
+  }
 
-&__description-story {
-font-size: 14px;
-font-weight: 500;
-line-height: 120%;
-text-transform: uppercase;
-margin: 0;
-margin-bottom: 24px;
-}
+  &__description-story {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+  }
 
-&__description-header {
-font-size: 38px;
-font-weight: 500;
-line-height: 120%;
-margin: 0;
-margin-bottom: 16px;
-}
+  &__description-header {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
 
-&__description-text {
-font-size: 16px;
-font-weight: 400;
-line-height: 140%;
-margin-bottom: 64px;
-}
+  &__description-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 64px;
+  }
 
-&__description-button {
+  &__description-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    text-align: center;
     width: 175px;
     height: 56px;
     padding: 16 24;
@@ -47,11 +52,14 @@ margin-bottom: 64px;
     border: 1px solid var(--primary-color);
     background-color: var(--button-color);
     cursor: pointer;
+    transition: color var(--animation-duration),
+      background-color var(--animation-duration);
+    // transition: all 0.15s ease-in-out;
+    // transition-property: background-color, color;
 
     &:hover {
-        background-color: var(--primary-color);
+      background-color: var(--primary-color);
       color: #fff;
     }
-    }
+  }
 }
-
