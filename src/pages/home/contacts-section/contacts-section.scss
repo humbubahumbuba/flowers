@@ -1,4 +1,57 @@
 .contacts-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--primary-color);
+
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__form-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--body-color);
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 1);
+    padding: 16px;
+    transition: border var(--animation-dur-dir);
+  }
+  &__form-button {
+    height: 56px;
+    padding: 16px 24px;
+    background-color: var(--body-color);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__contacts-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--body-color);
+    border: solid 1px var(--primary-color);
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact-block {
+    border: 1px solid var(--primary-color);
+  }
 }
