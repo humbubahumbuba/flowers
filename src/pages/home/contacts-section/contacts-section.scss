@@ -98,6 +98,10 @@
     border: 1px solid var(--primary-color);
   }
 
+  &__call-icon {
+    fill: currentColor;
+  }
+
   &__social-link-wrapper {
     display: flex;
   }
