@@ -43,15 +43,29 @@
     font-weight: 500;
     line-height: 120%;
     color: var(--body-color);
-    border: solid 1px var(--primary-color);
+    border-bottom: solid 1px var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 16 px;
   }
 
   &__contact-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  &__contacts-description {
+    margin-bottom: 24px;
   }
 
   &__contact-block {
     border: 1px solid var(--primary-color);
+  }
+
+  &__social-link-wrapper {
+    display: flex;
   }
 }
