@@ -27,10 +27,8 @@
     padding: 0 60px;
     display: flex;
     align-items: center;
-    transition: color var(--animation-duration),
-      background-color var(--animation-duration);
-    // transition: all 0.15s ease-in-out;
-    // transition-property: background-color, color;
+    transition: all 0.2s ease-in-out;
+    transition-property: background-color, color;
 
     &:hover {
       background-color: var(--primary-color);

@@ -1,3 +1,9 @@
 import { flowersApi } from '@/entities/flower';
 
-flowersApi.getFlowers();
+const bootstrap = async () => {
+  const response = await flowersApi.getFlowers();
+
+  console.log(response);
+};
+
+bootstrap();

@@ -50,12 +50,10 @@
     padding: 16 24;
     border-radius: 0;
     border: 1px solid var(--primary-color);
-    background-color: var(--button-color);
+    background-color: #fff;
     cursor: pointer;
-    transition: color var(--animation-duration),
-      background-color var(--animation-duration);
-    // transition: all 0.15s ease-in-out;
-    // transition-property: background-color, color;
+    transition: all 0.2s ease-in-out;
+    transition-property: background-color, color;
 
     &:hover {
       background-color: var(--primary-color);

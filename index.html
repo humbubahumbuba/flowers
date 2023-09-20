@@ -180,16 +180,13 @@
           <p class="contacts-section__form-text">We will call you back</p>
           <form class="contacts-section__form">
             <input
-              class="contacts-section__input"
+              class="input contacts-section__input"
               type="tel"
-              name="telephone"
+              name="phone"
               required
-              placeholder="+380 XX XXX XX XX"
+              placeholder="+380XXXXXXXXX"
             />
-
-            <button type="submit" class="contacts-section__form-button">
-              Book a call
-            </button>
+            <button type="submit" class="button">Book a call</button>
           </form>
         </div>
 
@@ -197,46 +194,50 @@
           <div class="contacts-section__contact-block">
             <h3 class="contacts-section__contacts-title">Phone</h3>
             <div class="contacts-section__contact-wrapper">
-              <span class="contacts-section__contacts-description">
+              <span class="contacts-section__contacts-item bold">
                 <svg class="contact-section__call-icon" width="24" height="24">
-                  <use href="./src/icons.svg/icons.svg#icon-call"></use>
+                  <use href="/icons/sprite.svg#icon-call"></use>
                 </svg>
-                +380980099777</span
-              >
-              <span class="contacts-section__contacts-description"
-                ><svg class="contact-section__call-icon" width="24" height="24">
-                  <use href="./src/icons.svg/icons.svg#icon-call"></use>
+                +380980099777
+              </span>
+              <span class="contacts-section__contacts-item bold">
+                <svg class="contact-section__call-icon" width="24" height="24">
+                  <use href="/icons/sprite.svg#icon-call"></use>
                 </svg>
-                +380980099111</span
-              >
+                +380980099111
+              </span>
             </div>
           </div>
           <div class="contacts-section__contact-block">
             <h3 class="contacts-section__contacts-title">Address</h3>
             <div class="contacts-section__contact-wrapper">
-              <span class="contacts-section__contacts-description touppercase"
-                >opening hours: 8 to 11 p.m.</span
-              >
-              <span class="contacts-section__contacts-description"
-                ><svg class="contact-section__pin-icon" width="24" height="24">
-                  <use href="./src/icons.svg/icons.svg#icon-pin-drop"></use>
+              <span class="contacts-section__contacts-item touppercase">
+                opening hours: 8 to 11 p.m.
+              </span>
+              <span class="contacts-section__contacts-item bold">
+                <svg width="24" height="24">
+                  <use href="/icons/sprite.svg#icon-pin-drop"></use>
                 </svg>
-                15/4 Khreshchatyk Street, Kyiv</span
-              >
+                15/4 Khreshchatyk Street, Kyiv
+              </span>
             </div>
           </div>
         </div>
       </div>
       <div class="contacts-section__social">
         <div>
-          <img class="contacts-section__image" src="#" alt="Shop entrance" />
+          <img
+            class="contacts-section__image"
+            src="/images/shop-entrance.jpg"
+            alt="Shop entrance"
+          />
         </div>
         <div class="contact-section__social-link-wrapper">
           <div>
-            <p>Follow us</p>
+            <div>Follow us</div>
           </div>
           <div>
-            <p>Social link</p>
+            <div>Social link</div>
           </div>
         </div>
       </div>

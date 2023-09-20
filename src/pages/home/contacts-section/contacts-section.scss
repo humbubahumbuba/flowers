@@ -26,41 +26,12 @@
 
   &__input {
     margin-right: 16px;
-    height: 56px;
-    border-radius: 4px;
-    border: 1px solid rgba(128, 128, 128, 1);
-    padding: 16px;
-    transition: color var(--animation-duration),
-      background-color var(--animation-duration);
-    &::placeholder {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 120%;
-      color: #808080;
-      padding: 16px;
-    }
-    &:hover {
-      background-color: var(--primary-color);
-      color: #ffffff;
-    }
-  }
-  &__form-button {
-    height: 56px;
-    padding: 16px 24px;
-    background-color: var(--body-color);
-    color: rgba(255, 255, 255, 1);
-    transition: color var(--animation-duration),
-      background-color var(--animation-duration);
-
-    &:hover {
-      background-color: #ffffff;
-      color: var(--primary-color);
-    }
   }
 
   &__contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--primary-color);
   }
 
   &__contacts-title {
@@ -73,7 +44,6 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    // padding-top: 16 px;
     padding: 16px;
   }
 
@@ -82,20 +52,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 60px 24px;
     gap: 24px;
   }
 
-  &__contacts-description {
+  &__contacts-item {
     font-size: 16px;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
     line-height: 120%;
     letter-spacing: 0.4px;
     color: rgba(18, 18, 18, 1);
   }
 
-  &__contact-block {
-    border: 1px solid var(--primary-color);
+  &__contact-block:first-child {
+    border-right: 1px solid var(--primary-color);
   }
 
   &__call-icon {
