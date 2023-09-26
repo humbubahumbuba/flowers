@@ -75,6 +75,7 @@
 
   &__social-link-wrapper {
     display: flex;
+    flex-direction: column;
   }
 
   &__social {
