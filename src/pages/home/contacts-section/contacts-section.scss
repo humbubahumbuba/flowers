@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 320px 24px;
+    padding: 138px 24px;
     gap: 24px;
   }
 
@@ -82,6 +82,7 @@
   &__social-link-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    // border-bottom: 1px solid var(--primary-color);
   }
 
   &__social-link-text {
@@ -106,8 +107,12 @@
 
   &__social-link-icon {
     fill: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transition-property: scale, fill;
     &:hover {
       fill: blue;
+      scale: 1.2;
     }
   }
 
