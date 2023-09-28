@@ -22,6 +22,7 @@
   &__layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid var(--primary-color);
   }
 
   &__service-description {
@@ -30,7 +31,6 @@
     justify-content: center;
     align-items: center;
     border-left: 1px solid var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
   }
 
   &__service {
@@ -45,6 +45,10 @@
     font-size: 50px;
     font-weight: 600;
     line-height: 120%;
+
+    &--secondary {
+      color: #fff;
+    }
   }
 
   &__service-text {
@@ -52,5 +56,30 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 140%;
+
+    &--secondary {
+      color: #fff;
+    }
+  }
+
+  &__service-hero {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./images/service-wedding.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c4c4c4;
+  }
+  &__service-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
