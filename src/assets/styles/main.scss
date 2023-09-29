@@ -25,6 +25,10 @@ select {
 a {
   text-decoration: none;
   color: var(--body-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul,

@@ -224,49 +224,39 @@
           </div>
         </div>
       </div>
-      <div class="contacts-section__social">
-        <div>
-          <img
-            class="contacts-section__image"
-            src="./images/flower-entrance.jpg"
-            alt="Shop entrance"
-          />
-        </div>
-        <div class="contacts-section__social-link-wrapper">
-          <div class="contacts-section__social-link-text">
-            <div>Follow us</div>
+      <div class="contacts-section__about">
+        <img
+          class="contacts-section__image"
+          src="/images/flower-entrance.jpg"
+          alt="Shop entrance"
+        />
+        <div class="contacts-section__social">
+          <div class="contacts-section__social-wrapper">
+            <div class="contacts-section__social-text">Follow us</div>
           </div>
-          <div class="contacts-section__social-link-icon-wrapper">
-            <div>
-              <a class="contacts-section__social-link-icon" href="#">
+          <div class="contacts-section__social-wrapper">
+            <div class="contacts-section__social-links">
+              <a class="contacts-section__social-link" href="#">
                 <svg width="24" height="24">
                   <use href="/icons/social-link-icon.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </div>
-            <div>
-              <a class="contacts-section__social-link-icon" href="#">
+              <a class="contacts-section__social-link" href="#">
                 <svg width="24" height="24">
                   <use href="/icons/social-link-icon.svg#icon-pinterest"></use>
                 </svg>
               </a>
-            </div>
-            <div>
-              <a class="contacts-section__social-link-icon" href="#">
+              <a class="contacts-section__social-link" href="#">
                 <svg width="24" height="24">
                   <use href="/icons/social-link-icon.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </div>
-            <div>
-              <a class="contacts-section__social-link-icon" href="#">
+              <a class="contacts-section__social-link" href="#">
                 <svg width="24" height="24">
                   <use href="/icons/social-link-icon.svg#icon-twitter"></use>
                 </svg>
               </a>
-            </div>
-            <div>
-              <a class="contacts-section__social-link-icon" href="#">
+              <a class="contacts-section__social-link" href="#">
                 <svg width="24" height="24">
                   <use href="/icons/social-link-icon.svg#icon-telegram"></use>
                 </svg>
@@ -281,13 +271,17 @@
         <h2 class="service-section__header">Our Services</h2>
       </div>
       <div class="service-section__layout">
-        <div class="service-section__image">
-          <img src="./images/flowwr-subs.jpg" alt="flower shop entrance" />
+        <div class="service-section__image-wrapper">
+          <img
+            class="service-section__image"
+            src="/images/flowwr-subs.jpg"
+            alt="flower shop entrance"
+          />
         </div>
-        <div class="container service-section__service-description">
-          <span class="sevrice-section__service touppercase">service</span>
-          <h3 class="service-section__service-header">Flower Subcriptions</h3>
-          <p class="service-section__service-text">
+        <div class="container service-section__wrapper">
+          <span class="service-section__subtitle touppercase">Service</span>
+          <h3 class="service-section__title">Flower Subscriptions</h3>
+          <p class="service-section__description">
             Experience the convenience and savings of regular flower deliveries
             with our flexible subscription service - up to 30% more profitable
             than one-time purchases.
@@ -297,17 +291,13 @@
           </button>
         </div>
       </div>
-      <div class="service-section__service-hero">
-        <div class="container service-section__service-hero-wrapper">
-          <span class="sevrice-section__service">service</span>
-          <h3
-            class="service-section__service-header service-section__service-header--secondary"
-          >
-            Wedding & Event Decor
-          </h3>
-          <p
-            class="service-section__service-text service-section__service-text--secondary"
-          >
+      <div class="service-section__service">
+        <div
+          class="container service-section__wrapper service-section__wrapper--light"
+        >
+          <span class="service-section__subtitle touppercase">Service</span>
+          <h3 class="service-section__title">Wedding & Event Decor</h3>
+          <p class="service-section__description">
             Let our team of expert florists and designers create stunning,
             on-trend floral décor for your special day. Trust us to bring your
             vision to life.
@@ -324,137 +314,105 @@
       <div></div>
     </section>
     <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__info">
-          <p class="footer__info-text">
-            Remember to offer beautiful flowers from Kyiv LuxeBouquets
-            Valentines Day, Mothers Day, Christmas... Reminds you 7 days before.
-            No spam or sharing your address
-          </p>
-          <form class="footer__form">
-            <input type="text" class="input footer__input" />
-          </form>
+      <div class="footer__block">
+        <p class="footer__info-text">
+          Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines
+          Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or
+          sharing your address
+        </p>
+        <form class="footer__form">
+          <input type="text" class="input footer__input" />
           <button type="submit" class="button uppercase footer__button">
-            remind
+            Remind
           </button>
-        </div>
-        <div class="footer__info">
-          <h2 class="footer__info-header">Contact Us</h2>
-          <ul>
-            <li class="footer__info-nav">
-              <p class="footer__nav-description">Address</p>
-              <a href="#" class="footer__info-contact-link"
-                >15/4 Khreshchatyk Street, Kyiv
-              </a>
-            </li>
-            <li class="footer__info-nav">
-              <p class="footer__nav-description">Phone</p>
-              <a href="#" class="footer__info-contact-link">+380980099777</a>
-            </li>
-            <li class="footer__info-nav">
-              <p class="footer__nav-description">General Enquiry:</p>
-              <a href="#" class="footer__info-contact-link"
-                >Kiev.Florist.Studio@gmail.com</a
-              >
-            </li>
-          </ul>
-          <h2 class="footer__info-header">Follow Us</h2>
-          <div class="footer__social-link-icon-wrapper">
-            <div>
-              <a class="footer__social-link-icon" href="#">
-                <svg width="24" height="24">
-                  <use href="/icons/social-link-icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a class="footer__social-link-icon" href="#">
-                <svg width="24" height="24">
-                  <use href="/icons/social-link-icon.svg#icon-pinterest"></use>
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a class="footer__social-link-icon" href="#">
-                <svg width="24" height="24">
-                  <use href="/icons/social-link-icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a class="footer__social-link-icon" href="#">
-                <svg width="24" height="24">
-                  <use href="/icons/social-link-icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a class="footer__social-link-icon" href="#">
-                <svg width="24" height="24">
-                  <use href="/icons/social-link-icon.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </div>
+        </form>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__title">Contact Us</h2>
+        <ul>
+          <li class="footer__info-nav">
+            <p class="footer__nav-description">Address</p>
+            <a href="#" class="footer__info-contact-link"
+              >15/4 Khreshchatyk Street, Kyiv
+            </a>
+          </li>
+          <li class="footer__info-nav">
+            <p class="footer__nav-description">Phone</p>
+            <a href="#" class="footer__info-contact-link">+380980099777</a>
+          </li>
+          <li class="footer__info-nav">
+            <p class="footer__nav-description">General Enquiry:</p>
+            <a href="#" class="footer__info-contact-link"
+              >Kiev.Florist.Studio@gmail.com</a
+            >
+          </li>
+        </ul>
+        <h2 class="footer__title">Follow Us</h2>
+        <div class="footer__social-link-icon-wrapper">
+          <div>
+            <a class="footer__social-link-icon" href="#">
+              <svg width="24" height="24">
+                <use href="/icons/social-link-icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a class="footer__social-link-icon" href="#">
+              <svg width="24" height="24">
+                <use href="/icons/social-link-icon.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a class="footer__social-link-icon" href="#">
+              <svg width="24" height="24">
+                <use href="/icons/social-link-icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a class="footer__social-link-icon" href="#">
+              <svg width="24" height="24">
+                <use href="/icons/social-link-icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a class="footer__social-link-icon" href="#">
+              <svg width="24" height="24">
+                <use href="/icons/social-link-icon.svg#icon-telegram"></use>
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="footer__info">
-          <h2 class="footer__info-header">Shop</h2>
-          <ul class="footer__info-block">
-            <li>
-              <a href="#" class="footer__info-nav-link">All Products</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Fresh Flowers</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Dried Flowers</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Live Plants</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Designer Vases</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Aroma Candles</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Freshener Diffuser</a>
-            </li>
-          </ul>
-          <h2 class="footer__info-header">Services</h2>
-          <ul class="footer__info-block">
-            <li>
-              <a href="#" class="footer__info-nav-link">Flower Subcription</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link"
-                >Wedding & Event Decor</a
-              >
-            </li>
-          </ul>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__title">Shop</h2>
+        <div class="footer__info-block">
+          <a href="#" class="footer__info-nav-link">All Products</a>
+          <a href="#" class="footer__info-nav-link">Fresh Flowers</a>
+          <a href="#" class="footer__info-nav-link">Dried Flowers</a>
+          <a href="#" class="footer__info-nav-link">Live Plants</a>
+          <a href="#" class="footer__info-nav-link">Designer Vases</a>
+          <a href="#" class="footer__info-nav-link">Aroma Candles</a>
+          <a href="#" class="footer__info-nav-link">Freshener Diffuser</a>
         </div>
-        <div class="footer__info">
-          <h2 class="footer__info-header">About Us</h2>
-          <ul class="footer__info-block">
-            <li>
-              <a href="#" class="footer__info-nav-link">Our story</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Blog</a>
-            </li>
-          </ul>
-          <ul class="footer__info-block">
-            <li>
-              <a href="#" class="footer__info-nav-link">Shipping & returns</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Terms & conditions</a>
-            </li>
-            <li>
-              <a href="#" class="footer__info-nav-link">Privacy policy</a>
-            </li>
-          </ul>
+        <h2 class="footer__title">Services</h2>
+        <div class="footer__info-block">
+          <a href="#" class="footer__info-nav-link">Flower Subcription</a>
+          <a href="#" class="footer__info-nav-link">Wedding & Event Decor</a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__title">About Us</h2>
+        <div class="footer__info-block">
+          <a href="#" class="footer__info-nav-link">Our story</a>
+          <a href="#" class="footer__info-nav-link">Blog</a>
+        </div>
+        <div class="footer__info-block">
+          <a href="#" class="footer__info-nav-link">Shipping & returns</a>
+          <a href="#" class="footer__info-nav-link">Terms & conditions</a>
+          <a href="#" class="footer__info-nav-link">Privacy policy</a>
         </div>
       </div>
     </footer>

@@ -3,6 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   border-bottom: 1px solid var(--primary-color);
 
+  &__wrapper {
+    display: grid;
+  }
+
   &__title {
     font-size: 50px;
     font-weight: 600;
@@ -32,6 +36,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-top: 1px solid var(--primary-color);
+    height: 100%;
   }
 
   &__contacts-title {
@@ -79,44 +84,52 @@
     object-fit: cover;
   }
 
-  &__social-link-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    // border-bottom: 1px solid var(--primary-color);
+  &__about {
+    border-left: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  &__social-link-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 16px;
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  &__social-wrapper {
+    padding: 40px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--primary-color);
+    }
+  }
+
+  &__social-text {
     font-size: 38px;
     font-weight: 500;
     line-height: 120%;
-    border-right: 1px solid var(--primary-color);
   }
 
-  &__social-link-icon-wrapper {
+  &__social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
-    padding: 40px 16px;
   }
 
-  &__social-link-icon {
+  &__social-link {
     fill: var(--primary-color);
+    display: block;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    transition-property: scale, fill;
+    transition-property: transform, fill;
+
     &:hover {
       fill: blue;
-      scale: 1.2;
+      transform: scale(1.2);
     }
-  }
-
-  &__social {
-    border-left: 1px solid var(--primary-color);
   }
 }
