@@ -79,11 +79,13 @@
   &__social-link-icon {
     fill: var(--primary-color);
     cursor: pointer;
+    display: block;
     transition: all 0.2s ease-in-out;
-    transition-property: scale, fill;
+    transition-property: transform, fill;
+
     &:hover {
       fill: blue;
-      scale: 1.2;
+      transform: scale(1.2);
     }
   }
 }
