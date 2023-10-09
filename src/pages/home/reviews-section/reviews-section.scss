@@ -1,0 +1,46 @@
+.reviews-section {
+  border-bottom: 1px solid var(--primary-color);
+
+  &_review-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_slider {
+    display: flex;
+    // max-width: 1168px;
+    width: 100%;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &_btnArrow-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  &__btnArrow-right {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+  }
+
+  &_slider-pointsArea {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+  }
+  &_slider-pointsArea-point {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background: var(--gray-color);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+}

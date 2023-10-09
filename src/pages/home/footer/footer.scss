@@ -81,11 +81,10 @@
     cursor: pointer;
     display: block;
     transition: all 0.2s ease-in-out;
-    transition-property: transform, fill;
+    transition-property: transform;
 
     &:hover {
-      fill: blue;
-      transform: scale(1.2);
+      transform: scale(1.5);
     }
   }
 }
