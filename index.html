@@ -38,88 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-section__products">
-        <div class="hero-section__product">
-          <h2 class="hero-section__products-header">Fresh Flower</h2>
-          <button type="button" class="hero-section__arrowBtn">
-            Shop Now
-            <svg width="24" height="24">
-              <use href="/icons/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="hero-section__product">
-          <img
-            src="https://images.unsplash.com/photo-1509719662282-b82bed65a96b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80"
-            alt="Flower"
-            class="hero-section__product-image"
-          />
-        </div>
-        <div class="hero-section__product">
-          <img
-            src="https://images.unsplash.com/photo-1509719662282-b82bed65a96b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80"
-            alt="Flower"
-            class="hero-section__product-image"
-          />
-        </div>
-        <div class="hero-section__product">
-          <h2 class="hero-section__products-header">Dried Flower</h2>
-          <button type="button" class="hero-section__arrowBtn">
-            <svg width="24" height="24">
-              <use href="/icons/sprite.svg#icon-arrow-left"></use>
-            </svg>
-            Shop now
-          </button>
-        </div>
-        <div class="hero-section__product">
-          <h2 class="hero-section__products-header">Live Plants</h2>
-          <button type="button" class="hero-section__arrowBtn">
-            Shop Now
-            <svg width="24" height="24">
-              <use href="/icons/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="hero-section__product">
-          <img
-            src="https://images.unsplash.com/photo-1509719662282-b82bed65a96b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80"
-            alt="Flower"
-            class="hero-section__product-image"
-          />
-        </div>
-        <div class="hero-section__product">
-          <img
-            src="https://images.unsplash.com/photo-1509719662282-b82bed65a96b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80"
-            alt="Flower"
-            class="hero-section__product-image"
-          />
-        </div>
-        <div class="hero-section__product">
-          <h2 class="hero-section__products-header">Aroma Candels</h2>
-          <button type="button" class="hero-section__arrowBtn">
-            <svg width="24" height="24">
-              <use href="/icons/sprite.svg#icon-arrow-left"></use>
-            </svg>
-            Shop Now
-          </button>
-        </div>
-        <div class="hero-section__product">
-          <h2 class="hero-section__products-header">Freshener</h2>
-          <button type="button" class="hero-section__arrowBtn">
-            Shop Now
-            <svg width="24" height="24">
-              <use href="/icons/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="hero-section__product">
-          <img
-            src="https://images.unsplash.com/photo-1509719662282-b82bed65a96b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80"
-            alt="Flower"
-            class="hero-section__product-image"
-          />
-        </div>
-      </div>
+      <div id="hero-products" class="hero-section__products"></div>
     </section>
     <section class="about-section">
       <div class="container">
@@ -476,6 +395,24 @@
         </div>
       </div>
     </footer>
+    <template id="hero-product">
+      <div class="hero-section__product">
+        <div class="hero-section__product-info">
+          <h2 class="hero-section__product-title j-product-title">{{name}}</h2>
+          <button type="button" class="hero-section__shop-button">
+            <svg width="24" height="24">
+              <use href="/icons/sprite.svg#icon-arrow-left"></use>
+            </svg>
+            Shop now
+          </button>
+        </div>
+        <img
+          src="{{image}}"
+          alt="Flower"
+          class="hero-section__product-image j-product-image"
+        />
+      </div>
+    </template>
     <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
