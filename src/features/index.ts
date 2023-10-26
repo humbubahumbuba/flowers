@@ -1,1 +1,2 @@
-import './header.scss';
+export * from './navbar/Navbar';
+export * from './footer/Footer';

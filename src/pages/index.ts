@@ -6,4 +6,3 @@ import './home/contacts-section/contacts-section.scss';
 import './home/service-section/service-section.scss';
 import './home/reviews-section/reviews-section.scss';
 import './home/reviews-section/reviews-section.ts';
-import './home/footer/footer.scss';
