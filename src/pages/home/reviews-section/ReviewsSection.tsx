@@ -62,13 +62,12 @@ export const ReviewsSection: FC = () => {
               </p>
               <p className="reviews-section__slide-reviewer">– Ronald Richards</p>
             </div>
-      </SwiperSlide>
+          </SwiperSlide>
+          
       <div className="swiper-pagination"></div>
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
         
-            
-     
         </Swiper>
       <button
         type="button"
