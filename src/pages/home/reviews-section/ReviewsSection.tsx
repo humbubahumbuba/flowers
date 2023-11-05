@@ -2,6 +2,7 @@ import { FC } from 'react';
 import './reviews-section';
 
 
+
 export const ReviewsSection: FC = () => {
     return (
          <section className="reviews-section container">

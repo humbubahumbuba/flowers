@@ -6,3 +6,6 @@ import './home/contacts-section/contacts-section.scss';
 import './home/service-section/service-section.scss';
 import './home/reviews-section/reviews-section.scss';
 import './home/reviews-section/reviews-section.ts';
+import './home/reviews-section/ReviewsSection.tsx';
+import './home/swiper/ReactSwiper.tsx';
+import './home/swiper/swiper.scss';

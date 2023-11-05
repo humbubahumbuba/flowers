@@ -1,0 +1,25 @@
+.swiper {
+  width: 80%;
+  height: 200px;
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    color: var(--primary-color);
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: var(--gray-color);
+
+    &-active {
+      background-color: var(--dark-gray-color);
+    }
+  }
+
+  .swiper-slide-shadow-coverflow {
+    background: none;
+  }
+}

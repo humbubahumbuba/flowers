@@ -5,6 +5,9 @@ import { BenefitsSection } from './pages/home/benefits-section/BenefitsSection';
 import { ContactsSection } from './pages/home/contacts-section/ContactsSection';
 import { ServiceSection } from './pages/home/service-section/ServiceSection';
 import { ReviewsSection } from './pages/home/reviews-section/ReviewsSection';
+import Swiper from './pages/home/swiper/ReactSwiper';
+
+
 
 
 export const App: FC = () => {
@@ -17,6 +20,8 @@ export const App: FC = () => {
       <ServiceSection />
       <ReviewsSection />
       <Footer />
+      <Swiper />
+      `
     </>
   );
 };
