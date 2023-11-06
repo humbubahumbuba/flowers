@@ -2,8 +2,8 @@ import { FC } from 'react';
 import './service-section.scss';
 
 export const ServiceSection: FC = () => {
-    return (
-        <section className="service-section">
+  return (
+    <section className="service-section">
       <div>
         <h2 className="service-section__header">Our Services</h2>
       </div>
@@ -29,9 +29,7 @@ export const ServiceSection: FC = () => {
         </div>
       </div>
       <div className="service-section__service">
-        <div
-          className="container service-section__wrapper service-section__wrapper--light"
-        >
+        <div className="container service-section__wrapper service-section__wrapper--light">
           <span className="service-section__subtitle touppercase">Service</span>
           <h3 className="service-section__title">Wedding & Event Decor</h3>
           <p className="service-section__description">
@@ -45,5 +43,5 @@ export const ServiceSection: FC = () => {
         </div>
       </div>
     </section>
-    )
-}
+  );
+};
