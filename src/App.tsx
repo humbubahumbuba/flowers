@@ -6,12 +6,11 @@ import { ContactsSection } from './pages/home/contacts-section/ContactsSection';
 import { ServiceSection } from './pages/home/service-section/ServiceSection';
 import { ReviewsSection } from './pages/home/reviews-section/ReviewsSection';
 import { HeroSection } from './pages/home/hero-section/HeroSection';
-import { Button } from './shared/components/button/Button';
+// import { Button } from './shared/components/button/Button';
 
 export const App: FC = () => {
   return (
     <>
-      <Button>Hello World</Button>
       <Navbar />
       <HeroSection />
       <AboutSection />
