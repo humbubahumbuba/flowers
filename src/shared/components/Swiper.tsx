@@ -20,8 +20,6 @@ export const Swiper: FC<SwiperProps> = ({ children }) => {
       }}
       loop={true}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       {children}
       <div className="swiper-pagination"></div>

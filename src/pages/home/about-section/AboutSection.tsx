@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import './about-section.scss';
+import { AButton } from '@/shared/components';
 
 export const AboutSection: FC = () => {
   return (
@@ -23,9 +24,7 @@ export const AboutSection: FC = () => {
           never been easier.
         </p>
 
-        <button type="button" className="about-section__description-button">
-          LEARN MORE
-        </button>
+        <AButton>Learn More</AButton>
       </div>
     </section>
   );

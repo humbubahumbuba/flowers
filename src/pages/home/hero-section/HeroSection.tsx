@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import './hero-section.scss';
 import { Flower, flowersApi } from '@/entities/flower';
+import { AButton } from '@/shared/components';
 
 export const HeroSection: FC = () => {
   const [flowers, setSetFlowers] = useState<Flower[]>([]);
@@ -47,12 +48,12 @@ export const HeroSection: FC = () => {
               <h2 className="hero-section__product-title j-product-title">
                 {flower.common_name}
               </h2>
-              <button type="button" className="hero-section__shop-button">
+              <AButton className="hero-section__shop-button">
                 <svg width="24" height="24">
                   <use href="/icons/sprite.svg#icon-arrow-left"></use>
                 </svg>
                 Shop now
-              </button>
+              </AButton>
             </div>
             <img
               src={flower.cover_image}

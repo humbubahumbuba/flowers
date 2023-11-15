@@ -2,6 +2,7 @@ import { FC } from 'react';
 import './reviews-section.scss';
 import { Swiper } from '@/shared/components/Swiper';
 import { SwiperSlide } from 'swiper/react';
+import { AButton } from '@/shared/components';
 
 export const ReviewsSection: FC = () => {
   return (
@@ -50,12 +51,9 @@ export const ReviewsSection: FC = () => {
           </SwiperSlide>
         </>
       </Swiper>
-      <button
-        type="button"
-        className="button button--secondary reviews-section__button uppercase"
-      >
+      <AButton className="button button--secondary reviews-section__button uppercase">
         Read Reviews
-      </button>
+      </AButton>
     </section>
   );
 };

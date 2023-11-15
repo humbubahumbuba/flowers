@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import './contacts-section.scss';
+import { AButton } from '@/shared/components';
 
 export const ContactsSection: FC = () => {
-    return (
-        <section className="contacts-section">
+  return (
+    <section className="contacts-section">
       <div className="contacts-section__wrapper">
         <div className="container">
           <h2 className="contacts-section__title">To Contact Us</h2>
@@ -16,7 +17,7 @@ export const ContactsSection: FC = () => {
               required
               placeholder="+380XXXXXXXXX"
             />
-            <button type="submit" className="button">Book a call</button>
+            <AButton type="submit">Book a call</AButton>
           </form>
         </div>
 
@@ -25,13 +26,21 @@ export const ContactsSection: FC = () => {
             <h3 className="contacts-section__contacts-title">Phone</h3>
             <div className="contacts-section__contact-wrapper">
               <span className="contacts-section__contacts-item bold">
-                <svg className="contact-section__call-icon" width="24" height="24">
+                <svg
+                  className="contact-section__call-icon"
+                  width="24"
+                  height="24"
+                >
                   <use href="/icons/sprite.svg#icon-call"></use>
                 </svg>
                 +380980099777
               </span>
               <span className="contacts-section__contacts-item bold">
-                <svg className="contact-section__call-icon" width="24" height="24">
+                <svg
+                  className="contact-section__call-icon"
+                  width="24"
+                  height="24"
+                >
                   <use href="/icons/sprite.svg#icon-call"></use>
                 </svg>
                 +380980099111
@@ -96,5 +105,5 @@ export const ContactsSection: FC = () => {
         </div>
       </div>
     </section>
-    )
-}
+  );
+};

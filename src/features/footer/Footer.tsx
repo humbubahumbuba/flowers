@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import './footer.scss';
+import { AButton } from '@/shared/components';
 
 export const Footer: FC = () => {
   return (
@@ -12,9 +13,7 @@ export const Footer: FC = () => {
         </p>
         <form className="footer__form">
           <input type="text" className="input footer__input" />
-          <button type="submit" className="button uppercase footer__button">
-            Remind
-          </button>
+          <AButton type="submit">Remind</AButton>
         </form>
       </div>
       <div className="footer__block">

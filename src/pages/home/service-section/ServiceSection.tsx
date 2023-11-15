@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import './service-section.scss';
+import { AButton } from '@/shared/components';
 
 export const ServiceSection: FC = () => {
   return (
@@ -23,9 +24,9 @@ export const ServiceSection: FC = () => {
             with our flexible subscription service - up to 30% more profitable
             than one-time purchases.
           </p>
-          <button type="submit" className="button button--secondary">
+          <AButton type="submit" color="secondary">
             Subscribe Now
-          </button>
+          </AButton>
         </div>
       </div>
       <div className="service-section__service">
@@ -37,9 +38,7 @@ export const ServiceSection: FC = () => {
             on-trend floral décor for your special day. Trust us to bring your
             vision to life.
           </p>
-          <button type="submit" className="button button--tertiary">
-            Inquire Now
-          </button>
+          <AButton type="submit">Inquire Now</AButton>
         </div>
       </div>
     </section>
