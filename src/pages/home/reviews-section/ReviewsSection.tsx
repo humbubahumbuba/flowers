@@ -51,9 +51,11 @@ export const ReviewsSection: FC = () => {
           </SwiperSlide>
         </>
       </Swiper>
-      <AButton className="button button--secondary reviews-section__button uppercase">
-        Read Reviews
-      </AButton>
+      <div className="reviews-section__button-wrapper">
+        <AButton type="submit" variant="ghost" width="custom">
+          Read Reviews
+        </AButton>
+      </div>
     </section>
   );
 };

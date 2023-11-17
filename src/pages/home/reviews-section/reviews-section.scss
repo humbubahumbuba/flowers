@@ -59,9 +59,9 @@
     margin-top: 16px;
   }
 
-  &__button {
-    padding: 16px 24px;
-    margin: auto;
-    margin-top: 64px;
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
