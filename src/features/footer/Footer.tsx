@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import './footer.scss';
 import { AButton } from '@/shared/components';
+import '../../shared/components/input.scss';
 
 export const Footer: FC = () => {
   return (
