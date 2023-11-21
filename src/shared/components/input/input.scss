@@ -1,0 +1,18 @@
+.a-input {
+  display: block;
+
+  &__field {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 16px;
+    transition: border-color 0.2s ease-in-out;
+    outline: none;
+
+    &:focus {
+      border-color: var(--primary-color);
+    }
+
+    &--error {
+      border-color: var(--danger-color);
+    }
+  }
+}

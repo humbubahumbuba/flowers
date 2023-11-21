@@ -1,24 +1,26 @@
+import { FC, InputHTMLAttributes, useContext } from 'react';
 import classNames from 'classnames';
-import { FC, InputHTMLAttributes } from 'react';
+import { useField } from 'formik';
+import { NameContext } from '../field/AField';
+import './input.scss';
 
-interface AInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name?: string;
-  label?: string;
-}
+interface AInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
-export const AInput: FC<AInputProps> = ({
-  name,
-  label,
-  className,
-  ...props
-}) => {
+export const AInput: FC<AInputProps> = ({ className, ...props }) => {
+  const name = useContext(NameContext);
+  const [field, meta] = useField(name);
+
   return (
-    <label className="label">
-      {label}
+    <label className="a-input">
       <input
-        className={classNames('input', className)}
+        className={classNames('a-input__field', className, {
+          'a-input__field--error': meta.touched && meta.error,
+        })}
         {...props}
+        value={field.value}
         name={name}
+        onChange={field.onChange}
+        onBlur={field.onBlur}
       />
     </label>
   );

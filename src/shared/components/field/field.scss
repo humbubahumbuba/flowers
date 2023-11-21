@@ -1,0 +1,11 @@
+.a-field {
+  margin-bottom: 15px;
+
+  &__label {
+    font-size: 14px;
+  }
+
+  &__error {
+    color: var(--danger-color);
+  }
+}

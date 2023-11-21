@@ -18,9 +18,9 @@ export const AButton: FC<AButtonProps> = ({
   return (
     <button
       type={type}
-      className={classNames('button', className, {
-        [`button--${variant}`]: variant,
-        [`button--${color}`]: color,
+      className={classNames('a-button', className, {
+        [`a-button--${variant}`]: variant,
+        [`a-button--${color}`]: color,
       })}
       {...props}
     >

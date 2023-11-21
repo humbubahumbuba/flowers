@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import './footer.scss';
-import { AButton } from '@/shared/components';
-import '../../shared/components/input.scss';
+import { FooterForm } from './FooterForm';
 
 export const Footer: FC = () => {
   return (
@@ -12,12 +11,7 @@ export const Footer: FC = () => {
           Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or
           sharing your address
         </p>
-        <form className="footer__form">
-          <input type="text" className="input footer__input w-full" />
-          <AButton className="w-full" type="submit">
-            Remind
-          </AButton>
-        </form>
+        <FooterForm />
       </div>
       <div className="footer__block">
         <h2 className="footer__title">Contact Us</h2>
