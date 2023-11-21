@@ -5,25 +5,22 @@ import './button.scss';
 interface AButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'solid' | 'ghost';
   color?: 'primary' | 'secondary';
-  width?: 'base' | 'custom';
 }
 
 export const AButton: FC<AButtonProps> = ({
   children,
   variant = 'solid',
-  width = 'base',
   color = 'primary',
   type = 'button',
-
+  className,
   ...props
 }) => {
   return (
     <button
       type={type}
-      className={classNames('button', {
+      className={classNames('button', className, {
         [`button--${variant}`]: variant,
         [`button--${color}`]: color,
-        [`button--${width}`]: width,
       })}
       {...props}
     >

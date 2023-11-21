@@ -1,4 +1,5 @@
 .hero-section {
+  $self: &;
   $hero-footer-padding: 24px;
 
   display: grid;
@@ -55,7 +56,7 @@
       border-bottom: 1px solid var(--primary-color);
     }
 
-    &:nth-child(odd) .hero-section__product-info {
+    &:nth-child(odd) #{$self}__product-info {
       border-right: 1px solid var(--primary-color);
     }
 
@@ -63,11 +64,11 @@
       border-right: 1px solid var(--primary-color);
     }
 
-    &:nth-child(even) .hero-section__product-info {
+    &:nth-child(even) #{$self}__product-info {
       order: 2;
     }
 
-    &:nth-child(even) .hero-section__product-image {
+    &:nth-child(even) #{$self}__product-image {
       order: 1;
     }
   }
@@ -105,5 +106,12 @@
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.4px;
+
+    #{$self}__product:nth-child(odd) & {
+      svg {
+        order: 1;
+        transform: rotate(180deg);
+      }
+    }
   }
 }

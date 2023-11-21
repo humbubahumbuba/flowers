@@ -24,7 +24,7 @@ export const AboutSection: FC = () => {
           never been easier.
         </p>
 
-        <AButton type="submit" variant="ghost" width="custom">
+        <AButton type="submit" variant="ghost">
           Learn More
         </AButton>
       </div>

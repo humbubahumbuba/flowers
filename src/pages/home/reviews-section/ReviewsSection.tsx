@@ -52,7 +52,7 @@ export const ReviewsSection: FC = () => {
         </>
       </Swiper>
       <div className="reviews-section__button-wrapper">
-        <AButton type="submit" variant="ghost" width="custom">
+        <AButton type="submit" variant="ghost">
           Read Reviews
         </AButton>
       </div>

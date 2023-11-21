@@ -14,7 +14,9 @@ export const Footer: FC = () => {
         </p>
         <form className="footer__form">
           <input type="text" className="input footer__input" />
-          <AButton type="submit">Remind</AButton>
+          <AButton className="w-full" type="submit">
+            Remind
+          </AButton>
         </form>
       </div>
       <div className="footer__block">

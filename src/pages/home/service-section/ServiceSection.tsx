@@ -24,7 +24,7 @@ export const ServiceSection: FC = () => {
             with our flexible subscription service - up to 30% more profitable
             than one-time purchases.
           </p>
-          <AButton type="submit" variant="ghost" width="custom">
+          <AButton type="submit" variant="ghost">
             Subscribe Now
           </AButton>
         </div>
@@ -38,12 +38,7 @@ export const ServiceSection: FC = () => {
             on-trend floral décor for your special day. Trust us to bring your
             vision to life.
           </p>
-          <AButton
-            type="submit"
-            color="secondary"
-            variant="ghost"
-            width="custom"
-          >
+          <AButton type="submit" color="secondary" variant="ghost">
             Inquire Now
           </AButton>
         </div>
