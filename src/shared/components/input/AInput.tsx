@@ -1,19 +1,25 @@
-import { ForwardRefRenderFunction, InputHTMLAttributes } from 'react';
+import classNames from 'classnames';
+import { FC, InputHTMLAttributes } from 'react';
 
 interface AInputProps extends InputHTMLAttributes<HTMLInputElement> {
   name?: string;
   label?: string;
-  ref?: string;
 }
 
-export const AInput: ForwardRefRenderFunction<HTMLInputElement, AInputProps> = (
-  { name, label, ...otherProps },
-  ref
-) => {
+export const AInput: FC<AInputProps> = ({
+  name,
+  label,
+  className,
+  ...props
+}) => {
   return (
     <label className="label">
       {label}
-      <input className={'input'} {...otherProps} name={name} ref={ref} />
+      <input
+        className={classNames('input', className)}
+        {...props}
+        name={name}
+      />
     </label>
   );
 };

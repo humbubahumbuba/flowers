@@ -13,7 +13,7 @@ export const Footer: FC = () => {
           sharing your address
         </p>
         <form className="footer__form">
-          <input type="text" className="input footer__input" />
+          <input type="text" className="input footer__input w-full" />
           <AButton className="w-full" type="submit">
             Remind
           </AButton>
