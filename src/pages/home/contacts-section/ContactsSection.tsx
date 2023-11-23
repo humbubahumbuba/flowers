@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import './contacts-section.scss';
-import { AButton } from '@/shared/components';
+// import { AButton } from '@/shared/components';
+import { ContactsForm } from './ContactForm';
 
 export const ContactsSection: FC = () => {
   return (
@@ -9,7 +10,8 @@ export const ContactsSection: FC = () => {
         <div className="container">
           <h2 className="contacts-section__title">To Contact Us</h2>
           <p className="contacts-section__form-text">We will call you back</p>
-          <form className="contacts-section__form">
+          <ContactsForm />
+          {/* <form className="contacts-section__form">
             <input
               className="input contacts-section__input"
               type="tel"
@@ -18,7 +20,7 @@ export const ContactsSection: FC = () => {
               placeholder="+380XXXXXXXXX"
             />
             <AButton type="submit">Book a call</AButton>
-          </form>
+          </form> */}
         </div>
 
         <div className="contacts-section__contacts">
