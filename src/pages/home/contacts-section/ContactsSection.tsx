@@ -11,16 +11,6 @@ export const ContactsSection: FC = () => {
           <h2 className="contacts-section__title">To Contact Us</h2>
           <p className="contacts-section__form-text">We will call you back</p>
           <ContactsForm />
-          {/* <form className="contacts-section__form">
-            <input
-              className="input contacts-section__input"
-              type="tel"
-              name="phone"
-              required
-              placeholder="+380XXXXXXXXX"
-            />
-            <AButton type="submit">Book a call</AButton>
-          </form> */}
         </div>
 
         <div className="contacts-section__contacts">

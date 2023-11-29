@@ -16,7 +16,7 @@ export const ContactsForm: FC = () => {
     >
       <Form className="contacts-section__form">
         <AField name="phone">
-          <AInput type="tel" className="w-full" placeholder="+380XXXXXXXXX" />
+          <AInput mask="+380#########" className="w-full" />
         </AField>
         <AButton type="submit" className="w-full">
           Remind

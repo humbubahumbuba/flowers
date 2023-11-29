@@ -5,5 +5,5 @@ export const initialValues = {
 };
 
 export const validationSchema = Yup.object({
-  phone: Yup.number().min(13).required().label('Phone'),
+  phone: Yup.string().phone().required().label('Phone'),
 });
