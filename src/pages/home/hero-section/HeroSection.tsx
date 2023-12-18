@@ -48,12 +48,12 @@ export const HeroSection: FC = () => {
               <h2 className="hero-section__product-title j-product-title">
                 {flower.common_name}
               </h2>
-              <AButton className="hero-section__shop-button">
+              <button className="hero-section__shop-button">
                 <svg width="24" height="24">
                   <use href="/icons/sprite.svg#icon-arrow-left"></use>
                 </svg>
                 Shop now
-              </AButton>
+              </button>
             </div>
             <img
               src={flower.cover_image}
